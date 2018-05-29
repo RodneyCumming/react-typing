@@ -1,0 +1,145 @@
+/* ---Stats Box--- */
+
+.statbox__title {
+  font-size: 18px;
+  color: #6a6c75;
+  margin-bottom: 0px;
+  position: relative;
+  top: 0px;
+  transition: color 0.5s 0.5s, margin-bottom 0.5s 0.5s, top 0.5s 0.5s;
+}
+
+.statbox__value {
+  display: inline-block;
+  font-size: 14px;
+  color: #0c87d6;
+  position: relative;
+  top: 0px;
+  transition: color 0.5s 0.5s, font-size 0.5s 0.5s, line-height 0.5s 0.5s, top 0.5s 0.5s;
+}
+
+.statbox__unit {
+  display: inline-block;
+  font-size: 14px;
+  color: #0c87d6;
+  position: relative;
+  top: 0px;
+  transition: color 0.5s 0.5s, font-size 0.5s 0.5s, line-height 0.5s 0.5s, top 0.5s 0.5s;
+}
+
+.stats {
+  height: 60px;
+  width: 100%;
+  background: #2b2c30;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 0;
+  transition: background 0.7s 0.8s, height 0.5s 0.5s, padding 0.5s 0.5s, margin 0.5s 0.5s, z-index 0s 1s
+}
+
+.statsCompleted {
+  background: #dcdcdc;
+  height: 300px;
+  margin: 80px auto;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  transition: background 1s, height 0.7s 0.3s, padding 0.5s 0.5s, margin 0.5s 0.5s;
+}
+
+.statsCompleted .statbox__title {
+  color: black;
+  margin-bottom: 5px;
+  position: relative;
+  top: -40px;
+  transition: all 0.5s 0.5s;
+}
+
+.statsCompleted .statbox__value, .statsCompleted .statbox__unit {
+  color: #7dae6a;
+  font-size: 35px;
+  line-height: 50px;
+  position: relative;
+  top: -40px;
+  transition: all 0.5s 0.5s;
+}
+
+/* ---Results Box--- */
+.resultsTitleHidden {
+  position: absolute;
+  top: 0;
+  color: white;
+  background: #61a75d;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 35px;
+  font-family: Arial;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding-left: 20px;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.resultsTitleShow {
+  opacity: 1;
+  transition: opacity 0.5s 1s;
+}
+
+.resultsOptionsHidden {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 30px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s 1s, all 1s;
+  text-align: center;
+  line-height: 70px;
+}
+
+.resultsOptionsShow {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 30px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.5s 1s;
+  text-align: center;
+  line-height: 70px;
+}
+
+.results__options__box {
+  display: inline-block;
+  width: 25%;
+  color: #8a8f92;
+  background: #d0d0d0;
+  font-size: 24px;
+  transition: all 0.2s;
+}
+
+.results__options__boxUnavailable {
+  display: inline-block;
+  width: 25%;
+  color: #bfbfbf;
+  background: #d0d0d0;
+  font-size: 24px;
+  transition: all 0.2s;
+}
+
+.results__options__box:hover {
+  background: #c0c0c0;
+  cursor: pointer;
+  color: #72777a;
+  transition: all 0.1s;
+}

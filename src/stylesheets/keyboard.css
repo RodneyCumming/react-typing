@@ -1,0 +1,67 @@
+/* ---Keyboard--- */
+.keyboard {
+  background: #404146;
+  margin: 30px auto;
+  padding: 9px;
+  text-align: center;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 10px;
+  width: 744px;
+  -webkit-transform-origin: 0 0;
+  box-sizing: border-box;
+}
+
+.keyboard__key {
+  height: 44px;
+  width: 44px;
+  background: #35363a;
+  display: inline-block;
+  text-align: center;
+  margin: 3px;
+  line-height: 44px;
+  color: #626262;
+  font-size: 14px;
+  border-radius: 5px;
+  border-bottom: 3px solid #2b2b2b;
+  position: relative
+}
+
+.keyboard__highlightedKey {
+  animation: incorrect 2s
+}
+
+@keyframes incorrect {
+  from {
+    background: #4c2929;
+    border-bottom: 3px solid #601c1c;
+  }
+  to {
+    background: #35363a;
+    border-bottom: 3px solid #2b2b2b;
+  }
+}
+
+.keyboard__capsOn {
+  box-shadow: 0 0 2px 0 #ff9898;
+}
+
+.keyboard__width-plusHalf {
+  width: 70px;
+}
+
+.keyboard__width-threeQuarts {
+  width: 82px;
+}
+
+.keyboard__width-plusOne {
+  width: 107px;
+}
+
+.keyboard__spacebar {
+  width: 300px;
+  margin: 3px auto;
+}
+
+.keyboard__correctKey {
+  box-shadow: 0 0 2px 0 #98a9ff;
+}

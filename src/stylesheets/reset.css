@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+p, h1, h2, h3, h4, h5, h6, a {
+  color: black;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+}
+
+body {
+  background: #2b2c30;
+}

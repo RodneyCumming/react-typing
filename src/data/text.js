@@ -1,8 +1,6 @@
 var books = [
+'a'
 
-'text number 1', 'Text Number 2'
-
-//
 // // The Picture of Dorian Gray
 // "The studio was filled with the rich odour of roses, and when the light summer wind stirred amidst the trees of the garden, there came through the open door the heavy scent of the lilac, or the more delicate perfume of the pink-flowering thorn",
 //
