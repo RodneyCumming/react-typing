@@ -5,7 +5,6 @@ import '../stylesheets/screen.css'
 export class Screen extends Component {
 
   setScrollPosition() {
-    console.log('returned---')
     const elementNode = findDOMNode(this.refs.progressMarker);
     let containerNode = findDOMNode(this.refs.screenRef);
 

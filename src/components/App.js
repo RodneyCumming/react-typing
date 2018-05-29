@@ -68,7 +68,6 @@ class App extends Component {
       nextText = true;
       inputType = this.state.inputSelected;
     }
-    console.log(this.state)
 
     // lesson bottons
     if (inputType === 'text') {
@@ -171,7 +170,6 @@ class App extends Component {
 
 
   handleKeyPress(e) {
-    console.log(e)
     // ignore tab, caps, shift, ctrl, backspace, enter
     if (e.key !== 'Tab' && e.key !== 'CapsLock' && e.key !== 'Shift' && e.key !== 'Control' && e.key !== 'Backspance' && this.state.showStats === false & this.state.generatorFocus === false) {
 
@@ -185,7 +183,10 @@ class App extends Component {
             currentCount: currentCount + 1,
           })
 
-          if (currentCount === 9 && inputSelected === 'test1') {
+          if ((currentCount === 59 && inputSelected === 'test1')
+              || (currentCount === 179 && inputSelected === 'test3')
+              || (currentCount === 299 && inputSelected === 'test5')
+        ) {
             clearInterval(this.intervalId);
             this.setState({
               showStats: true
@@ -254,7 +255,6 @@ class App extends Component {
         }
 
       } else {
-        console.log('false')
           this.setState({
             incorrectArr: [...incorrectArr, textLetter],
             incorrect: true,
@@ -282,13 +282,11 @@ class App extends Component {
 
 
   genFocus() {
-    console.log('focus')
     this.setState({
       generatorFocus: true
     })
   }
   genBlur() {
-    console.log('focus')
     this.setState({
       generatorFocus: false
     })
@@ -301,7 +299,6 @@ class App extends Component {
     this.setState({
       keyboardScaler: scaler
     })
-    console.log('keyboard scaler', this.state.keyboardScaler)
   }
 
   handleWordEnd() {
@@ -316,7 +313,6 @@ class App extends Component {
       wordCount: this.state.wordCount + 1,
       incorrectWordCurrent: false
     })
-    console.log(this.state.incorrectWordsArr)
   }
 
   handleToggleMenu() {
@@ -329,8 +325,6 @@ class App extends Component {
     const {accuracy, showStats, incorrectArr, wpm, currentCount, inputSelected, incorrectWordsArr, screenFade, completedText, inputText, remainingText, keyCode, incorrect, correctLetter, correctLetterCase, caps, keyboardScaler, showMenu} = this.state
     return (
       <div className="App">
-        <div style={{position: 'absolute', top: 0, right: 0, background: 'white', zIndex: 1000}} onClick={() => console.log(this.state)}>State</div>
-
         <Header handleToggleMenu = {this.handleToggleMenu}/>
 
         <div className="main" ref='main'>
@@ -359,5 +353,6 @@ Todo List
 
 ---------Refactoring--------------
 - less css animations
+- better sample text
 
 */
