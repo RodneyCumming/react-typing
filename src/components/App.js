@@ -348,6 +348,7 @@ Todo List
 ---------Fuctionality--------------
 
 ---------Bugs--------------
+prevent spacebar from scrolling
 
 ---------Styling--------------
 
