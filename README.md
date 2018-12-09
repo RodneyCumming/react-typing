@@ -27,6 +27,14 @@
 
 Become more familiar with using React.js and building Single-page-applications.
 
+## Functionality
+
+- Practice text, numbers, or symbols
+- Measure words-per-minute and accurate
+- Show keys to press on screen so you don't have to look at hands
+- Results component and keyboard showing incorrect keys
+- Option to generate based of your most incorrect keys or keys of your choice
+
 ## Live Website
 
 https://devrod.github.io/react-typing/ :zap:
