@@ -37,7 +37,7 @@ Become more familiar with using React.js and building Single-page-applications.
 
 ## Live Website
 
-https://devrod.github.io/react-typing/ :zap:
+https://rodneycumming.github.io/react-typing/ :zap:
 
 ## Author
 
