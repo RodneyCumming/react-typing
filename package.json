@@ -2,7 +2,7 @@
   "name": "typing",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://devrod.github.io/react-typing/",
+  "homepage": "https://rodneycumming.github.io/react-typing/",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "react": "^16.3.1",
